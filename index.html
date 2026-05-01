@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- KIRI (PROJECT LIST) -->
+  <div class="sidebar">
+
+    <div class="project" onclick="loadProject('devata')">
+      <h3>Devata</h3>
+      <img src="https://ik.imagekit.io/Realice/Cover/2">
+    </div>
+
+    <div class="project" onclick="loadProject('memories')">
+      <h3>Memories</h3>
+      <img src="https://ik.imagekit.io/Realice/Cover/2">
+    </div>
+
+  </div>
+
+  <!-- KANAN (PREVIEW) -->
+  <div class="preview">
+
+    <div class="main-image">
+      <img id="mainPreview" src="https://ik.imagekit.io/Realice/Cover/2">
+    </div>
+
+    <div class="thumbnails" id="thumbContainer">
+      <!-- auto isi -->
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
