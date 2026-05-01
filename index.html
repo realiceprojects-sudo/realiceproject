@@ -2,43 +2,63 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio</title>
+<title>Realice Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
+<header>
+  <h1>RE//ALICE</h1>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">TERM OF SERVICE</a>
+    <a href="#">COMMISSION INFO</a>
+    <a href="#">CONTACT</a>
+    <a href="#">WORK EXPERIENCE</a>
+    <a href="#">LOGO</a>
+    <a href="#">GUI</a>
+  </nav>
+</header>
+
+<!-- MAIN -->
 <div class="container">
 
-  <!-- KIRI (PROJECT LIST) -->
+  <!-- LEFT -->
   <div class="sidebar">
-
-    <div class="project" onclick="loadProject('devata')">
+    
+    <div class="card" onclick="loadProject('devata')">
       <h3>Devata</h3>
-      <img src="https://ik.imagekit.io/Realice/Cover/2">
+      <img src="images/1.jpg">
     </div>
 
-    <div class="project" onclick="loadProject('memories')">
+    <div class="card" onclick="loadProject('memories')">
       <h3>Memories</h3>
-      <img src="https://ik.imagekit.io/Realice/Cover/2">
+      <img src="images/2.jpg">
     </div>
 
   </div>
 
-  <!-- KANAN (PREVIEW) -->
-  <div class="preview">
+  <!-- RIGHT -->
+  <div class="viewer">
 
-    <div class="main-image">
-      <img id="mainPreview" src="https://ik.imagekit.io/Realice/Cover/2">
+    <!-- PREVIEW -->
+    <div class="preview">
+      <img id="mainImage" src="images/1.jpg">
     </div>
 
-    <div class="thumbnails" id="thumbContainer">
-      <!-- auto isi -->
-    </div>
+    <!-- THUMBNAIL -->
+    <div class="thumbs" id="thumbs"></div>
 
   </div>
 
 </div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Realice Project
+</footer>
 
 <script src="script.js"></script>
 </body>
