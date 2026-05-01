@@ -1,22 +1,22 @@
 const projects = {
   devata: [
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2"
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg",
+    "images/5.jpg"
   ],
-
   memories: [
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2",
-    "https://ik.imagekit.io/Realice/Cover/2"
+    "images/6.jpg",
+    "images/7.jpg",
+    "images/8.jpg",
+    "images/9.jpg"
   ]
 };
 
 function loadProject(name) {
-  const thumbs = document.getElementById("thumbContainer");
-  const main = document.getElementById("mainPreview");
+  const thumbs = document.getElementById("thumbs");
+  const main = document.getElementById("mainImage");
 
   thumbs.innerHTML = "";
 
@@ -33,3 +33,6 @@ function loadProject(name) {
 
   main.src = projects[name][0];
 }
+
+/* default load */
+loadProject("devata");
